@@ -1,3 +1,7 @@
+plugins {
+    id("lol.bai.explosion")
+}
+
 metadata("lol.bai.megane.module.indrev") {
     waila("MeganeIndustrialRevolution")
 
@@ -24,7 +28,7 @@ dependencies {
     modImplementation(deps.fabric.trEnergy)
     modImplementation(deps.fabric.libgui)
     modImplementation(deps.fabric.patchouli)
-    modImplementation(deps.fabric.magna)
+    modImplementation(explosion.fabric(deps.fabric.magna))
     modImplementation(deps.fabric.stepAttr)
     modImplementation(deps.fabric.noIndium)
 }
